@@ -20,6 +20,7 @@
 
 </head>
 <body style="background-image: url(<?php echo BGBODY; ?>);">
+TRa-ta-ta
 <div>
     <header id = "menucontainer" style="background-color: <?php echo BGHEAD; ?>;">
     <?php
