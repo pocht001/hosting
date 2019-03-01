@@ -1,0 +1,228 @@
+body {
+    background-image: url(/resources/images/stock-textures.jpg);
+}
+
+#adminStructure {
+    width: 98%
+}
+
+#adminAuth {
+    margin-left:auto;
+    margin-right:auto;
+    text-align: center;
+}
+
+a:link {
+    color: #101010;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #333322;
+    text-decoration: none;
+}
+
+.nmc {
+    border: 2px solid #333322;
+    margin-top: -1px; /* Отступ сверху */
+    margin-bottom: -2px; /* Отступ снизу */
+    padding-left: 10px;
+    width: 98%;
+}
+
+.redcom {
+    float: right;
+}
+
+img.redcom, img.savetag, img.savetag2  {
+    width:25px;
+    height:25px;
+    float: right;
+    margin-top: 25px;
+}
+
+img.rednew {
+    width:25px;
+    height:25px;
+}
+
+img.modcom {
+    width:25px;
+    height:25px;
+    float: right;
+    margin: -20px;
+    margin-right: 20px;
+}
+
+img.savetag2 {
+    display: none;
+}
+
+img.saveButton {
+    width:32px;
+    height:24px;
+    padding:0px;
+    magrin:0px;
+}
+
+img.redcom:hover, img.modcom:hover, img.rednew:hover {
+    width:17px;
+    height:17px;
+    border: solid 4px #202020;
+}
+
+.newsImg {
+    width: 520px;
+}
+
+td.adminMenu1, td.icons {
+    vertical-align: top;
+}
+
+td.en {
+    width: 97%;
+    padding: 10px;
+}
+
+.adminMenu1 {
+    width: 220px;
+}
+
+/*Класс span class="e" добавлен чтобы этажи страниц пагинатора не наезжали друг на друга*/
+.e {
+    display: inline-block;
+    margin-bottom: 2px;
+    margin-top: 7px;
+}
+
+#overlay {display:none; position:fixed; z-index:999; opacity:0.5; filter:alpha(opacity=50); top:0; right:0; left:0; bottom:0; background:#000; }
+.popup {display:none; position:fixed; border:3px solid #999; background:#c7b34c; width:480px; height:240px; top:10%; right: 10%; margin: 0px; z-index:1000;  border-radius:10px; padding:30px;}
+#close {display:block; width:24px; text-align:center; cursor:pointer;  height:24px; line-height:24px; background:#fff; color:red; border:3px solid red;  position:absolute; top:10px; right:10px; text-decoration:none; border-radius:3px; font-size:20px; }
+
+#comText, #newText {
+    width:100%;
+    height: 160px;
+}
+
+#newText1 {
+    width: 100%;
+    height: 480px;
+    display: none;
+}
+
+#newText {
+    height: 420px;
+}
+
+#newTheme, #newTheme1 {
+    width: 100%;
+}
+
+#newTheme2 {
+    font: italic bold 20px/30px Georgia, serif;
+//font: 20px;
+    //font-weight: bold;
+}
+
+#addcomment {
+    display: inline-block;
+}
+
+#message_added, #newTheme1, .dellImg {
+    display: none;
+}
+
+#cathegory {
+    width: 140px;
+}
+
+#isanalytic {
+    margin-left: 30px;
+}
+
+td.tags {
+    width: 220px;
+}
+td.userTags {
+    width: 100%;
+}
+
+.userTag {
+    margin-right: 20px;
+}
+
+#userTags {
+    max-width: 340px;
+}
+
+.message-ok {
+    background-color: lightgreen;
+}
+.message-error {
+    background-color: LightSalmon;
+}
+
+.taglist {
+    border: 1px solid #202020;
+}
+
+.inptag {
+    width:90%;
+}
+
+.but {
+    border: #132313 1px solid;
+    border-radius: 4px;
+    background-color: #778866;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+.but:hover {
+    background-color: #333322;
+    color: #676921;
+    cursor: pointer;
+}
+
+.mi:hover, .msi:hover, .mssi:hover {
+    background-color: #B0B0B0;
+    cursor: pointer;
+}
+
+.rbimg1 {
+    width: 200px;
+}
+
+.dellItem, .mi, .msi, .mssi, .savemi {
+    border: solid 1px black;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.dellItem {
+    background-color: #dd3333;
+}
+.dellItem:hover, .savemi:hover {
+    background-color: #B8860B;
+    cursor: pointer;
+}
+.savemi {
+    background-color: limegreen;
+}
+.mi {
+    background-color: #C9C9EE;
+    font-size: 19px;
+    width: 480px;
+}
+.msi {
+    background-color: #C9EEC9;
+    font-size: 16px;
+}
+.mssi {
+    background-color: #EEC9C9;
+    font-size: 14px;
+}
+
+.hideInp, .savemi {
+    display: none;
+}

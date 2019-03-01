@@ -1,0 +1,10 @@
+#Кодировка
+AddDefaultCharset utf-8
+
+RewriteEngine on
+RewriteBase /
+#Запрет перенаправления если файл есть
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+#Перенаправление со страниц
+RewriteRule ^(.*)$ index.php

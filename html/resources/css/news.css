@@ -1,0 +1,96 @@
+body {
+    background-color: #778866;
+    //background-image: url(/resources/images/stock-textures.jpg);
+}
+
+td {
+    vertical-align: top;
+}
+
+table.main {
+    z-index: 1;
+    width: 100%;
+    border: 0px;
+}
+
+a:link {
+    color: #101010;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #333322;
+    font-size: 18px;
+    text-decoration: none;
+}
+a.cathDB {
+    font-color: #101010;
+    font-size: 22px;
+}
+
+.newsCath {
+    text-align:left;
+    padding: 5px;
+    border: solid 2px #333322;
+    border-radius: 3px;
+}
+
+.newsItem {
+    font-size: 18px;
+    text-indent: 1.5em; /* Отступ первой строки */
+    text-align: justify; /* Выравнивание по ширине */
+}
+
+.newsImgconteiner {
+    text-align: center;
+}
+
+.newsImg {
+    width: 520px;
+}
+
+.sidebar {
+    color: #FFA500;
+    margin: 4px;
+    margin-bottom: 8px;
+}
+
+table.top5, td.top5 {
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+#top5commentators td {
+    text-align: center;
+    }
+
+.tops {
+    border: solid 2px #333322;
+    border-radius: 3px;
+    padding: 10px;
+}
+
+ .tooltip {
+    z-index: 999;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+
+    width: 220px;
+    background-color: #333322;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+     transition: all 0.5s ease-out;
+     position: relative;
+}
+
+ .seller {
+     color: #333322;
+ }
+
+ .rbimg {
+     width: 200px;
+ }

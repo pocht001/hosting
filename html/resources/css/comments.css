@@ -1,0 +1,48 @@
+.commentatribute {
+    font-size: 14px;
+    color: #333322;
+    font-weight: bold;
+}
+
+.commenttext {
+    color: #202020
+}
+
+.comment {
+    border: solid; 1px;
+    border-color: #333322;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+img.like {
+    width:20px;
+    height:20px;
+    bottom: -3px;
+}
+
+img.like:hover {
+    background-color: #333322;
+}
+
+.answers {
+    padding-left: 32px;
+    padding-right: 8px;
+}
+
+#pagblock a.c1, #pagblock span.d {
+   padding: 5px 0 5px 0;
+}
+
+#comText {
+    width: 98%;
+}
+
+.ansText {
+    display:none;
+    width: 98%;
+}
+
+.addanswer {
+    display:none;
+}
