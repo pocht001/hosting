@@ -17,9 +17,10 @@ class SearchController
         $searchResult = array();
         if ($_POST) {
         $filter = $_POST;
-        if ($filter) {
+        if (count($filter)>1) {
         if (!strlen($filter['date_begin'])) $filter['date_begin']=null;
         if (!strlen($filter['date_end'])) $filter['date_end']=null;
+        if (!strlen($filter['searchSiteData'])) $filter['searchSiteData']=null;
         if (!isset($filter['tags'])) $filter['tags']=null;
         if (!isset($filter['cathegories'])) $filter['cathegories']=null;
             $searchResult = News::getNewsByFilterSearch($filter);

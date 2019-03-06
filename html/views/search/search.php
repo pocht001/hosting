@@ -52,6 +52,8 @@
                 <form action="/search/searchonsite" method="POST">
 
                     <div class="searchFilter">
+
+                        <input class="searchData" type="text" name="searchSiteData" placeholder="Расширенный поиск по сайту"><br/>
                         <?php
                         $c=count($cathegories);
                         $s = ($c>=8) ? 8 : $c ?>
