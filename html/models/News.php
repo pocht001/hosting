@@ -216,7 +216,7 @@ class News
      */
     public static function getNewsByFilterSearch($filter=null) {
         //Проверяем выбраны ли параметры фильтра
-        if (!$filter['date_begin'] && !$filter['date_end'] && !$filter['tags'] && !$filter['cathegories'])
+        if (!$filter['date_begin'] && !$filter['date_end'] && !$filter['tags'] && !$filter['cathegories'] && !$filter['searchSiteData'])
             $res['message']='Параметры фильтра не заданы';
         //Проверяем чтобы дата начала<дата конца
         elseif ($filter['date_begin'] > $filter['date_end'] && $filter['date_end'])
@@ -252,6 +252,13 @@ class News
                     if ($i!=(count($filter['cathegories'])-1)) $query .= 'OR ';
                     else $query .= ') ';
                 }
+            }
+            if ($filter['searchSiteData']) {
+                $filter['searchSiteData'] = filter_var($filter['searchSiteData'], FILTER_SANITIZE_STRING);
+                if ($filter['date_begin'] || $filter['date_end'] || $filter['tags'] || $filter['cathegories']) $query .=' AND (';
+                else $query .= ' WHERE (';
+                $query .= '(text LIKE "%'.$filter['searchSiteData'].'%" OR theme LIKE "%'.$filter['searchSiteData'].'%") ';
+                $query .= ') ';
             }
             $db=Db::getConnection();
             $result = $db->query($query);
